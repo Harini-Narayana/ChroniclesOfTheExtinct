@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'Oxygen', sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    flex-wrap: wrap;
+}
+.image{
+    width: 100%;
+    height:50vh;
+    position: relative;
+    z-index: -1;
+}
+.title{
+    position: absolute;
+    top:15vh;
+    left:5%;
+    font-size: 100px;
+    text-align: center;
+    text-shadow:  0 0 15px rgb(0,0,0,0.53);
+}
+.discription{
+    text-align: center;
+    margin:30px;
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(115, 159, 114);
+    font-family: "Caveat", cursive;
+    text-shadow: 0 0 15px rgb(0,0,0,0.7);
+}
+.ready{
+    font-size: 41px;
+    text-align: center;
+    font-weight: 500;
+    text-shadow:  0 0 15px rgb(255,255,255,0.5);
+    color: rgb(210, 188, 161);
+}
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 100px;
+    margin: 100px;
+    padding: 70px;
+}
+.card{
+    background: rgb(51, 38, 52);
+    height: 40vh;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 0 0 15px rgb(255,255,255,0.5);
+    cursor: pointer; 
+}
+.card:hover{
+    transition: all 0.8s ease-out;
+    transform: scale(1.45);
+}
+.card img{
+    width: 100%;
+    height: 20vh;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+.card p{
+    margin-top: 10px;
+    font-family: "Caveat", cursive;
+    font-size: large;
+}
